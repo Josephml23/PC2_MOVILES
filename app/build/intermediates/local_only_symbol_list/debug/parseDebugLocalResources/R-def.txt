@@ -1,0 +1,6 @@
+R_DEF: Internal format may change without notice
+local
+color primary
+color primary_dark
+string app_name
+style Theme.StockMin

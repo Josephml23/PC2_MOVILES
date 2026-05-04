@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="primary">#1F6B3A</color>
+    <color name="primary_dark">#0E4F25</color>
+    <string name="app_name">StockMin</string>
+    <style name="Theme.StockMin" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor" ns1:targetApi="l">#1F6B3A</item>
+        <item name="android:windowLightStatusBar" ns1:targetApi="m">false</item>
+    </style>
+</resources>
