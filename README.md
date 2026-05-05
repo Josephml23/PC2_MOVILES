@@ -1,3 +1,8 @@
+INTEGRANTES 
+1.- Kana Huillcapacco Cesar Augusto 
+2.- Villar Collantes Alexis Andree
+3.- Joseph Fredy Marcani Leyva 
+
 # StockMin
 
 App Android de control de inventario para almacen en campo minero.
