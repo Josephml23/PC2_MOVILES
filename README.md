@@ -93,11 +93,13 @@ El recorrido de un movimiento es asi:
    - El `combine` recibe los nuevos valores y produce un nuevo `DetalleUiState`.
    - Compose recompone solo lo que depende de ese estado: la tarjeta de stock cambia el numero, aparece la nueva fila en el historial y, si se cruzo el umbral minimo, el contenedor se pinta en color de error.
 
-La clave es que la UI **no consulta** la base de datos despues del movimiento ni se entera "manualmen<img width="494" height="1002" alt="WhatsApp Image 2026-05-04 at 19 02 42" src="https://github.com/user-attachments/assets/c8c55955-e11d-47c5-8dd3-2453265fdd85" />
+La clave es que la UI **no consulta** la base de datos despues del movimiento ni se entera "manualmente" de que algo cambio. Solo se suscribe al StateFlow y reacciona. Todo el flujo va en una sola direccion:
+PRUEBAS IMAGENES 
+<img width="494" height="1002" alt="WhatsApp Image 2026-05-04 at 19 02 42" src="https://github.com/user-attachments/assets/c8c55955-e11d-47c5-8dd3-2453265fdd85" />
 <img width="470" height="1022" alt="WhatsApp Image 2026-05-04 at 19 02 29" src="https://github.com/user-attachments/assets/fd8344c1-cac7-4857-94ec-0df9239f4f4f" />
 <img width="468" height="1004" alt="WhatsApp Image 2026-05-04 at 19 05 33" src="https://github.com/user-attachments/assets/83916872-4a59-4c5c-9ac5-3a50d0f03c82" />
 <img width="490" height="986" alt="WhatsApp Image 2026-05-04 at 19 03 30" src="https://github.com/user-attachments/assets/70a412d9-f998-4727-91fb-10191c590920" />
-te" de que algo cambio. Solo se suscribe al StateFlow y reacciona. Todo el flujo va en una sola direccion:
+
 
 ```
 Usuario -> Evento -> ViewModel -> Repository -> Room
